@@ -1,0 +1,41 @@
+<!--
+  Copyright (c) 2023, Oracle and/or its affiliates.
+   Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracle.com/licenses/upl.
+-->
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="?android:attr/actionBarSize">
+    <androidx.preference.PreferenceCategory
+        android:title="Content Server"
+        android:key="pref_key_server_settings">
+        <androidx.preference.EditTextPreference
+            android:key="pref_key_hostname_app"
+            android:title="Content Server URL"
+            android:summary="@string/default_server_url"
+            android:defaultValue="@string/default_server_url"
+            android:enabled="false"
+            />
+        <androidx.preference.EditTextPreference
+            android:key="pref_key_access_token_app"
+            android:title="Channel Token"
+            android:summary="@string/default_channel_token"
+            android:defaultValue="@string/default_channel_token"
+            android:enabled="false"
+            />
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory
+        android:title="Cache"
+        android:key="pref_key_cache_settings">
+        <androidx.preference.CheckBoxPreference
+            android:key="pref_key_cache_enabled"
+            android:title="Enable cache"
+            android:summary="Enable cache for SDK calls"
+            android:defaultValue="true"
+            />
+        <androidx.preference.CheckBoxPreference
+            android:key="pref_key_logging_enabled"
+            android:title="Enable logging"
+            android:summary="Detailed logging for SDK calls"
+            android:defaultValue="true"
+            />
+    </androidx.preference.PreferenceCategory>
+</androidx.preference.PreferenceScreen>

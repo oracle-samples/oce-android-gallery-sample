@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 2023, Oracle and/or its affiliates.
+   Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracle.com/licenses/upl.
+-->
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            app:startDestination="@id/homepage_fragment">
+
+
+    <fragment
+            android:id="@+id/homepage_fragment"
+            android:name="com.oracle.content.samples.gallery.ui.HomePageFragment"
+            android:label="@string/section_gallery"
+            tools:layout="@layout/home_page_category_list">
+        <action
+                android:id="@+id/action_to_photos"
+                app:destination="@id/gallery_photos_fragment"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"/>
+
+
+    </fragment>
+    <fragment
+            android:id="@+id/gallery_photos_fragment"
+            android:name="com.oracle.content.samples.gallery.ui.GalleryPhotosFragment"
+            tools:layout="@layout/gallery_photo_list">
+
+        <action
+                android:id="@+id/action_to_photo_detail"
+                app:destination="@id/photo_view_pager_fragment"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/photo_view_pager_fragment"
+        android:name="com.oracle.content.samples.gallery.ui.PhotoViewPagerFragment"
+        android:label="Photo" />
+
+    <fragment
+        android:id="@+id/settings_fragment"
+        android:label="@string/action_settings"
+        android:name="com.oracle.content.samples.gallery.ui.SettingsFragment"/>
+
+    <action
+        android:id="@+id/action_go_to_settings"
+        app:destination="@id/settings_fragment"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"/>
+
+
+</navigation>

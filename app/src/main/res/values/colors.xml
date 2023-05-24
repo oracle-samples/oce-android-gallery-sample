@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 2023, Oracle and/or its affiliates.
+   Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracle.com/licenses/upl.
+-->
+<resources>
+
+    <color name="WHITE">#ffffff</color>
+    <color name="colorPrimary">#bc0000</color>
+    <color name="colorPrimaryDark">#840000</color>
+    <color name="colorAccent">#bc0000</color>
+    <color name="supremo_red">#bc0807</color>
+    <color name="supremo_red_transparent">#8cbc0807</color>
+
+    <!-- Navigation menu colors -->
+    <color name="navBackground">#303030</color>
+    <color name="navTextColor">#cecece</color>
+    <color name="navTextColorChecked">#ffffff</color>
+
+    <color name="docs_listing_grid_view_border_color">#d9d9d9</color>
+    <color name="docs_listing_grid_view_selected_background_color">#d9d9d9</color>
+
+    <color name="docs_listing_grid_card_view_background_color">@color/WHITE</color>
+    <color name="docs_listing_grid_card_view_border_color">#d6dfe6</color>
+
+</resources>
